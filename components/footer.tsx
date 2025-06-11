@@ -21,12 +21,15 @@ export default function Footer() {
               transition={{ duration: 0.6 }}
               className="flex items-center space-x-2 mb-4"
             >
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-cyan-300 rounded-lg flex items-center justify-center">
+              {/* <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-cyan-300 rounded-lg flex items-center justify-center">
                 <Zap className="h-6 w-6 text-slate-900" />
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
                 ElomDev
-              </span>
+              </span> */}
+               <div className="flex items-center space-x-2">
+                <img className="w-40  items-center justify-center" src="/ELOM_logo.png" alt="" />
+              </div>
             </motion.div>
 
             <motion.p
@@ -119,8 +122,8 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="border-t border-blue-500/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
         >
-          <p className="text-blue-300 text-sm flex items-center">
-            &copy; {new Date().getFullYear()} HICHAM ELOTMANI<Heart className="h-4 w-4 text-red-400 mx-1" />{" "}
+          <p className="text-blue-300 text-sm flex items-center ">
+            &copy; {new Date().getFullYear()} HICHAM ELOTMANI{" "}
           
           </p>
 

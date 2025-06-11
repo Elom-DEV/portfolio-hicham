@@ -27,7 +27,7 @@ export default function ContactSection() {
     const timer = setTimeout(() => {
       setSubmitStatus({ success: false, message: '' })
     }, 2000)
-    return () => clearTimeout(timer)
+    return () => clearTimeout(timer)  
   }
 }, [submitStatus])
 
@@ -174,7 +174,7 @@ export default function ContactSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
           {/* Contact Methods */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -251,7 +251,7 @@ export default function ContactSection() {
           </motion.div>
 
           {/* Contact Form */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -352,7 +352,7 @@ export default function ContactSection() {
                 )}
               </form>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>

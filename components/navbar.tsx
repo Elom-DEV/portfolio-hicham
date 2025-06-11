@@ -133,7 +133,12 @@ export default function Navbar() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
-                    onClick={() => scrollToSection(item.href)}
+                        onClick={() => {
+  setIsOpen(false)
+  setTimeout(() => {
+    scrollToSection(item.href)
+  }, 300) // 300ms correspond à la durée de ton animation framer-motion
+}}
                     className="block w-full text-left px-4 py-3 text-blue-100 hover:text-cyan-300 hover:bg-blue-400/10 rounded-lg transition-all duration-300"
                   >
                     {item.name}
