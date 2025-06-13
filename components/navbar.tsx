@@ -31,7 +31,7 @@ export default function Navbar() {
   }, [])
 
   const scrollToSection = (href: string) => {
-    setIsOpen(false)
+    // setIsOpen(false)
     document.querySelector(href)?.scrollIntoView({ behavior: "smooth" })
   }
 

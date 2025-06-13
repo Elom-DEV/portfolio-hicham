@@ -8,7 +8,8 @@ import Image from "next/image"
 
 const roles = [
   "JAVA",
-  "REACT.JS", 
+  "REACT.JS",
+  "NEXT.JS", 
   "SPRING BOOT",
   "DEVELOPPEUR WORDPRESS",
   "SEO OPTIMISATION",
