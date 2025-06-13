@@ -15,10 +15,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-
-        <link rel="icon" href="/logo_1.png" />
-      </head>
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6RLXY2V2N"></script>
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-C6RLXY2V2N');
+      `,
+    }}
+  />
+  <link rel="icon" href="/logo_1.png" />
+</head>
   
       <body>{children}</body>
     </html>
