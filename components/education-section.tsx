@@ -6,17 +6,17 @@ import { GraduationCap, Award, BookOpen } from "lucide-react"
 
 const education = [
   {
-    degree: "Master, Big Data et Cloud Computing",
-    school: "ENSET Mohammedia",
-    location: "Mohammedia, Maroc",
+    degree: "Master Informatique",
+    school: " Big Data et Cloud Computing.",
+    location: " ENSET Mohammedia, Maroc.",
     period: "2024 - 2026",
     // description: "Spécialisation en développement web et architectures distribuées",
-    grade: "Mention Très Bien",
+    grade: "En cours",
   },
   {
     degree: "Licence Informatique",
-    school: "ENSET Mohammedia",
-    location: "Mohammedia, Maroc",
+    school: "Développement Web et Mobile.",
+    location:" ENSET Mohammedia, Maroc.",
     period: "2022 - 2023",
     // description: "Formation générale en informatique et mathématiques appliquées",
     grade: "Assez bien Bien",

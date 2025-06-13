@@ -138,10 +138,10 @@ export default function ContactSection() {
     },
     {
       icon: Instagram,
-      name: "hmeott",
-      href: "https://www.instagram.com/hmeott/",
+      name: "Instagram",
+      href: "https://www.instagram.com/elom.hicham/",
       color: "hover:text-pink-400",
-      followers: "13k+ abonnés",
+      followers: "elom.hicham",
     },
     {
       icon: Video,

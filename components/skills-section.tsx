@@ -10,21 +10,23 @@ const skillCategories = [
     icon: Code,
     color: "from-blue-400 to-cyan-400",
     skills: [
-      { name: "React.js", level: 50, color: "bg-blue-500" },
-      { name: "JavaScript", level: 50, color: "bg-yellow-500" },
       { name: "HTML/CSS", level: 88, color: "bg-orange-500" },
-      { name: "Responsive Design", level:50, color: "bg-cyan-400" },
-    ],
+      { name: "JavaScript", level: 60, color: "bg-yellow-500" },
+      { name: "React.js", level: 60, color: "bg-blue-500" },
+      { name: "Next.js", level: 60, color: "bg-blue-600" },
+      { name: "Bootstrap", level: 80, color: "bg-purple-500" },
+      { name: "TypeScript", level: 60, color: "bg-blue-400" },    ],
   },
   {
     title: "Backend",
     icon: Database,
     color: "from-cyan-400 to-blue-500",
     skills: [
-      { name: "Java Spring Boot", level: 50, color: "bg-green-500" },
-      { name: "API RESTful", level: 50, color: "bg-green-400" },
-      { name: "Microservices", level: 50, color: "bg-blue-600" },
+      { name: "Java Spring Boot", level: 65, color: "bg-green-600" },
+      { name: "API RESTful", level: 70, color: "bg-green-200" },
+      { name: "Microservices", level: 70, color: "bg-blue-600" },
       { name: "PostgreSQL", level: 82, color: "bg-blue-500" },
+      { name: "MySql", level: 75, color: "bg-purple-400" },
     ],
   },
   {
@@ -34,8 +36,13 @@ const skillCategories = [
     skills: [
       { name: "WordPress", level: 90, color: "bg-blue-600" },
       { name: "Git/GitLab", level: 70, color: "bg-orange-500" },
+      {name: "Github", level: 70, color: "bg-purple-500" },
+      { name: "CRM", level: 60, color: "bg-yellow-500" },
+      {name: "Docker", level: 40, color: "bg-blue-400" },
       { name: "Postman", level: 70, color: "bg-orange-400" },
-      { name: "Spring Data JPA", level: 78, color: "bg-green-600" },
+
+
+      
     ],
   },
   {
@@ -47,6 +54,7 @@ const skillCategories = [
       { name: "Pinterest (1.4k+)", level: 90, color: "bg-red-500" },
       { name: "Threads (5.6k+)", level: 90, color: "bg-purple-500" },
       { name: "Contenu Tech", level: 90, color: "bg-indigo-500" },
+      { name: "Fcebook (7.2k+)", level: 85, color: "bg-blue-500" },
     ],
   },
   {
@@ -64,7 +72,7 @@ const tools = [
   "Git/GitHub",
   "VS Code",
   "IntelliJ IDEA",
-  "CRM",
+  "Hostinger",
   "Postman",
   "Docker",
   "Canva",
