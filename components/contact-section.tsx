@@ -98,7 +98,7 @@ export default function ContactSection() {
     {
       icon: Phone,
       title: "Téléphone",
-      value: "+212 7 67b 76 80 07",
+      value: "+212 7 67 76 80 07",
       href: "tel:+212767768007",
       color: "from-cyan-400 to-blue-500",
       description: "Lun-Ven 9h-18h",
@@ -127,7 +127,7 @@ export default function ContactSection() {
       name: "LinkedIn",
       href: "https://www.linkedin.com/in/hicham-elotmani/",
       color: "hover:text-blue-400",
-      followers: "HICHAM ELOTMANI",
+      followers: "elotmani hicham",
     },
     {
       icon: Github,

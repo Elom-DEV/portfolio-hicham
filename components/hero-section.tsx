@@ -82,7 +82,7 @@ export default function HeroSection() {
             >
               <span className="block text-white mb-2">Hicham Elotmani </span>
               <span  className="block bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 bg-clip-text text-transparent">
-                INGÉNIEURE LOGICIEL
+                INGÉNIERIE  LOGICIEL
               </span>
             </motion.h1>
 
@@ -201,10 +201,12 @@ export default function HeroSection() {
 
               {/* Floating elements */}
               {[
-                { icon: "⚡", position: "top-4 right-4", delay: 0 },
-                { icon: "🚀", position: "bottom-4 left-4", delay: 1 },
-                { icon: "👨🏻‍💻", position: "top-4 left-4", delay: 2 },
-                { icon: "🎯", position: "bottom-4 right-4", delay: 3 },
+                {  src: "/javaa.png", position: "top-4 right-4 ", delay: 0 },
+                { src: "/react.png", position: "bottom-4 left-4", delay: 1 },
+                { src: "/VsCode.png", position: "top-4 left-4", delay: 2 },
+                { src: "/intelij.png", position: "bottom-4 right-4", delay: 3 },
+
+
               ].map((item, index) => (
                 <motion.div
                   key={index}
@@ -217,7 +219,11 @@ export default function HeroSection() {
                     animate={{ y: [0, -5, 0] }}
                     transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: item.delay }}
                   >
-                    {item.icon}
+                    {item.src === "/java.png" ? (
+                      <Image src={item.src} alt="Java" width={32} height={32} />
+                    ) : (
+                      <Image src={item.src} alt={item.src.split('/').pop()?.split('.')[0] || "Icon"} width={32} height={32} />
+                    )}  
                   </motion.span>
                 </motion.div>
               ))}
