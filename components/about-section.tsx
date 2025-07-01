@@ -80,24 +80,20 @@ export default function AboutSection() {
             <div className="bg-gradient-to-br from-slate-900/50 to-blue-950/30 backdrop-blur-xl rounded-2xl p-8 border border-blue-500/20 shadow-2xl shadow-blue-500/10">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6">
                 Développeur Passionné{" "}
-                <span className="bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">3+ ans</span>
+                <span className="bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent"></span>
               </h3>
 
               <div className="space-y-4 text-blue-100 leading-relaxed">
                 <p>
                   Je suis HICHAM ELOTMANI, développeur full-stack passionné par la création d'applications web modernes.
-                  Mon expertise couvre React.js, Java Spring Boot et WordPress, avec une approche axée sur les
+                  Mon expertise couvre React.js et Next.js, Java Spring Boot et WordPress, avec une approche axée sur les
                   microservices et l'architecture BFF.
                 </p>
 
                 <p>
-                  En parallèle de mon activité en développement logiciel,
-                   je partage du contenu éducatif sur la programmation via TikTok
-                    (plus de 10 000 abonnés), Pinterest
-                     (plus de 1 400 abonnés et 2,5 millions de vues mensuelles) 
-                     et Threads (plus de 5 abonnés et 4 millions de vues).
-                      J’ai également lancé pixcodi.net,
-                       une plateforme dédiée aux wallpapers gratuits pour mobile et PC.
+                  En parallèle de mon activité en développement logiciel, je partage du contenu éducatif sur la programmation via TikTok, où j’ai réuni une communauté de plus de 10 000 abonnés. J’ai également lancé la plateforme pixcodi.net, spécialisée dans les wallpapers gratuits pour mobile et PC. Ce projet bénéficie d’une forte visibilité sur Pinterest (plus de 1 400 abonnés et 2,5 millions de vues mensuelles) et sur Threads (plus de 5 abonnés et 4 millions de vues), où je diffuse régulièrement mes créations.
+
+
                 </p>
 
                 <p>
@@ -109,13 +105,13 @@ export default function AboutSection() {
               <div className="mt-8 grid grid-cols-2 gap-6">
                 <div className="text-center">
                   <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
-                    17k+
+                    20k+
                   </div>
                   <div className="text-blue-200 text-sm">Followers réseaux sociaux</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">
-                    3+
+                    1+
                   </div>
                   <div className="text-blue-200 text-sm">Années d'expérience</div>
                 </div>

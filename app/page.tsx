@@ -11,6 +11,7 @@ import ParticleBackground from "@/components/particle-background"
 import ServicesSection from "@/components/services-section"
 import EducationSection from "@/components/education-section"
 import TestimonialsSection from "@/components/testimonials-section"
+import MaintenancePage from "./maintenance/page"
 
 
 
@@ -19,6 +20,7 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950 text-white overflow-x-hidden">
       <ParticleBackground />
       <Navbar />
+      
       <main className="relative z-10">
         <HeroSection />
         <AboutSection />

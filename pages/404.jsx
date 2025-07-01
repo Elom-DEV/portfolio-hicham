@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 
 
 
-export default function Custom404() {
+export default function NotFound() {
   return (
     <div className="min-h-screen bg-slate-950 flex flex-col items-center justify-center px-4 text-center">
       {/* Logo en haut */}

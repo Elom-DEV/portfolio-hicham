@@ -146,7 +146,7 @@ export default function ContactSection() {
     {
       icon: Video,
       name: "TikTok",
-      href: "https://www.tiktok.com/@pixcodi?is_from_webapp=1&sender_device=pc",
+      href: "https://www.tiktok.com/@elom_dev?is_from_webapp=1&sender_device=pc",
       color: "hover:text-purple-400",
       followers: "1ok+ abonnés",
     },
@@ -238,7 +238,7 @@ export default function ContactSection() {
                 ))}
               </div>
             </div>
-            <div className="mt-6 p-4 bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-400/20 rounded-lg">
+            {/* <div className="mt-6 p-4 bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-400/20 rounded-lg">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-purple-300 font-medium">Site web</span> 
                 <span className="text-purple-200 text-sm">5.6k+ Visiteurs</span>
@@ -247,7 +247,7 @@ export default function ContactSection() {
                 <span className="text-cyan-300 font-medium"><a href="https://pixcodi.net/" target="_blank">pixcodi.net</a></span>
                 <span className="text-cyan-200 text-sm">Wallpapers gratuits</span>
               </div>
-            </div>
+            </div> */}
           </motion.div>
 
           {/* Contact Form */}

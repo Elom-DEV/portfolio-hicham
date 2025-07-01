@@ -99,26 +99,25 @@ const packages = [
     ],
     popular: true,
   },
-  // {
-  //   id: 3,
-  //   name: "Enterprise",
-  //   price: "2499€",
-  //   description: "Solution premium pour entreprises",
-  //   icon: Rocket,
-  //   color: "from-blue-500 to-indigo-500",
-  //   features: [
-  //     "Site e-commerce complet",
-  //     "Design sur mesure premium",
-  //     "Fonctionnalités avancées",
-  //     "Intégrations tierces",
-  //     "Performance optimisée",
-  //     "Support prioritaire 1 an",
-  //     "Hébergement premium 1 an",
-  //     "Maintenance incluse",
-  //     "Formation équipe",
-  //   ],
-  //   popular: false,
-  // },
+  {
+  id: 3,
+  name: "Next.js Pro",
+  price: "à partir de 250$",
+  description: "Développement de sites statiques et web apps performants avec Next.js",
+  icon: Rocket,
+  color: "from-blue-500 to-indigo-500",
+  features: [
+    "Site statique ultra-rapide avec Next.js",
+    "Design moderne et personnalisé",
+    "Hébergement inclus 1 an",
+    "Maintenance 6 mois",
+    "Support réactif",
+    "Optimisation SEO",
+  
+  ],
+  popular: false,
+}
+
 ]
 
 const technologies = [
@@ -183,8 +182,7 @@ export default function ServicesSection() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-300 mx-auto mb-8"></div>
           <p className="text-blue-200 text-lg max-w-3xl mx-auto">
-            Création de sites WordPress professionnels, modernes et optimisés pour votre succès en ligne
-          </p>
+Création de sites WordPress professionnels, modernes et optimisés pour votre succès en ligne, ainsi que de sites statiques performants avec Next.js.          </p>
         </motion.div>
 
         {/* Tab Navigation */}
@@ -361,7 +359,7 @@ export default function ServicesSection() {
             >
               {/* Packages Grid */}
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-16 px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-5 mb-16 px-4 sm:px-6 lg:px-8">
                 {packages.map((pkg, index) => (
                   <motion.div
                     key={pkg.id}
