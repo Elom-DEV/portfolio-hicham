@@ -163,7 +163,7 @@ html {
 }
 
 .float {
-  animation: float 3s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite; 
 }
 
 /* Gradient border animation */
@@ -184,3 +184,4 @@ html {
   background-size: 400% 400%;
   animation: gradient-border 3s ease infinite;
 }
+

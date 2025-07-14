@@ -11,7 +11,7 @@ const roles = [
   "REACT.JS",
   "NEXT.JS", 
   "SPRING BOOT",
-  "DEVELOPPEUR WORDPRESS",
+  "DÉVELOPPEUR WORDPRESS",
   "SEO OPTIMISATION",
   "Créateur de Contenu",
 
@@ -30,7 +30,7 @@ export default function HeroSection() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8 relative">
       {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className=" w-full absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
           <motion.div
             key={i}
@@ -53,7 +53,7 @@ export default function HeroSection() {
         ))}
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="w-full px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <motion.div
