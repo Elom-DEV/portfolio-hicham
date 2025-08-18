@@ -102,7 +102,7 @@ const packages = [
   {
   id: 3,
   name: "Next.js Pro",
-  price: "à partir de 250$",
+  price: "à partir de 250€",
   description: "Développement de sites statiques et web apps performants avec Next.js",
   icon: Rocket,
   color: "from-blue-500 to-indigo-500",

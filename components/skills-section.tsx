@@ -35,8 +35,8 @@ const skillCategories = [
     color: "from-blue-500 to-indigo-500",
     skills: [
       { name: "WordPress", level: 90, color: "bg-blue-600" },
-      { name: "Git/GitLab", level: 70, color: "bg-orange-500" },
-      {name: "Github", level: 70, color: "bg-purple-500" },
+      { name: "Git/GitLab/Github", level: 70, color: "bg-orange-500" },
+      { name: "WooCommerce", level: 70, color: "bg-purple-500" },
       { name: "CRM", level: 60, color: "bg-yellow-500" },
       {name: "Docker", level: 40, color: "bg-blue-400" },
       { name: "Postman", level: 70, color: "bg-orange-400" },

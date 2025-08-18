@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Wrench } from "lucide-react"
-
+556
 export default function MaintenancePage() {
   return (
     <div className="min-h-screen bg-slate-950 flex flex-col items-center justify-center px-4 text-center">
