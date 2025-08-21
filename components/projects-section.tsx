@@ -36,7 +36,7 @@ const projects = [
     demo: "https://github.com/Elom-DEV/The-Movie-App-React-js-?tab=readme-ov-file",
     featured: false,
     stats: { stars: 189, forks: 32, views: "8.7k" },
-    icon: Smartphone,
+    icon: Code,
   },
   {
     id: 3,
@@ -53,24 +53,24 @@ const projects = [
     stats: { stars: 156, forks: 28, views: "6.2k" },
     icon: Globe,
   },
-  // {
-  //   id: 4,
-  //   title: "DevTools Extension",
-  //   category: "Extension",
-  //   description: "Extension navigateur pour développeurs avec outils avancés",
-  //   longDescription:
-  //     "Extension de navigateur complète pour développeurs avec inspecteur de performance, analyseur de code et outils de débogage avancés.",
-  //   image: "/placeholder.svg?height=400&width=600",
-  //   technologies: ["JavaScript", "Chrome API", "React", "Webpack", "CSS3"],
-  //   github: "#",
-  //   demo: "#",
-  //   featured: false,
-  //   stats: { stars: 312, forks: 67, views: "15.3k" },
-  //   icon: Code,
-  // },
+  {
+    id: 4,
+    title: "portfolio personnel",
+    category: "Next js",
+    description: "Un portfolio personnel d'une page pour les développeurs et designers.",
+    // longDescription:
+    //   "Extension de navigateur complète pour développeurs avec inspecteur de performance, analyseur de code et outils de débogage avancés.",
+    image: "/portfolio.png?height=400&width=600",
+    technologies: ["TypeScript", "tailwind css", "Next.js", "motion"],
+    github: "#",
+    demo: "https://lightseagreen-stork-241500.hostingersite.com/",
+    featured: false,
+    stats: { stars: 312, forks: 67, views: "15.3k" },
+    icon: Code,
+  },
 ]
 
-const categories = ["Tous", "Wordpress", "React js", "Web App", ]
+const categories = ["Tous", "Wordpress", "React js","Next js", "Web App", ]
 
 export default function ProjectsSection() {
   const [selectedCategory, setSelectedCategory] = useState("Tous")
