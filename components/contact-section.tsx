@@ -101,7 +101,7 @@ export default function ContactSection() {
       value: "+212 7 67 76 80 07",
       href: "tel:+212767768007",
       color: "from-cyan-400 to-blue-500",
-      description: "Lun-Ven 9h-18h",
+      description: "Lun-Sam 9h-18h",
     },
     {
       icon: MapPin,

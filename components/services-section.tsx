@@ -66,7 +66,7 @@ const packages = [
   {
     id: 1,
     name: "Starter",
-    price: "150€",
+    price: "",
     description: "Parfait pour débuter en ligne",
     icon: Zap,
     color: "from-blue-400 to-cyan-400",
@@ -83,7 +83,7 @@ const packages = [
   {
     id: 2,
     name: "Professional",
-    price: " A partir de 350€",
+    price: " ",
     description: "Solution complète pour professionnels",
     icon: Crown,
     color: "from-cyan-400 to-blue-500",
@@ -102,7 +102,7 @@ const packages = [
   {
   id: 3,
   name: "Next.js Pro",
-  price: "à partir de 250€",
+  price: ";",
   description: "Développement de sites statiques et web apps performants avec Next.js",
   icon: Rocket,
   color: "from-blue-500 to-indigo-500",
@@ -197,25 +197,25 @@ Création de sites WordPress professionnels, modernes et optimisés pour votre s
               <Button
                 variant={activeTab === "services" ? "default" : "ghost"}
                 onClick={() => setActiveTab("services")}
-                className={`px-8 py-3 rounded-xl transition-all duration-300 ${
+                className={`px-5 py-3 rounded-xl transition-all duration-300 ${
                   activeTab === "services"
                     ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-lg"
                     : "text-blue-300 hover:text-white hover:bg-blue-500/10"
                 }`}
               >
-                <Globe className="h-4 w-4 mr-2" />
+                <Globe className="h-4 w-4 " />
                 Types de Sites
               </Button>
               <Button
                 variant={activeTab === "packages" ? "default" : "ghost"}
                 onClick={() => setActiveTab("packages")}
-                className={`px-8 py-3 rounded-xl transition-all duration-300 ${
+                className={`px-3 py-3 rounded-xl transition-all duration-300 ${
                   activeTab === "packages"
                     ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-lg"
                     : "text-blue-300 hover:text-white hover:bg-blue-500/10"
                 }`}
               >
-                <Crown className="h-4 w-4 mr-2" />
+                <Crown className="h-4 w-4 " />
                 Packages
               </Button>
             </div>
