@@ -22,14 +22,15 @@ export default function ContactSection() {
     success: false,
     message: '',
   });
+  
   useEffect(() => {
-  if (submitStatus.message) {
-    const timer = setTimeout(() => {
-      setSubmitStatus({ success: false, message: '' })
-    }, 2000)
-    return () => clearTimeout(timer)  
-  }
-}, [submitStatus])
+    if (submitStatus.message) {
+      const timer = setTimeout(() => {
+        setSubmitStatus({ success: false, message: '' })
+      }, 2000)
+      return () => clearTimeout(timer)  
+    }
+  }, [submitStatus])
 
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -50,36 +51,45 @@ export default function ContactSection() {
     setSubmitStatus({ success: false, message: '' });
 
     try {
-      const response = await fetch("/api/contact", {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          subject: formData.subject,
-          message: `Sujet: ${formData.subject}\n\nMessage: ${formData.message}\n\nDe: ${formData.name} <${formData.email}>`
-        }),
+      // Utilisation de FormSubmit au lieu de l'API personnalisée
+      const form = e.currentTarget;
+      const originalAction = form.action;
+      
+      // Configuration des paramètres supplémentaires pour FormSubmit
+      form.action = `https://formsubmit.co/elotmani.dev@gmail.com`;
+      
+      // Ajout des champs cachés pour la configuration FormSubmit
+      const hiddenInputs = [
+        { name: '_subject', value: `Nouveau message de portfolio: ${formData.subject}` },
+        { name: '_template', value: 'table' },
+        { name: '_next', value: `${window.location.origin}${window.location.pathname}?contact=success` },
+        { name: '_captcha', value: 'false' }
+      ];
+      
+      // Ajout des champs cachés au formulaire
+      hiddenInputs.forEach(input => {
+        let hiddenInput = form.querySelector(`input[name="${input.name}"]`) as HTMLInputElement;
+        if (!hiddenInput) {
+          hiddenInput = document.createElement('input');
+          hiddenInput.type = 'hidden';
+          hiddenInput.name = input.name;
+          form.appendChild(hiddenInput);
+        }
+        hiddenInput.value = input.value;
       });
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      const data = await response.json();
-
-      if (data.success) {
-        setSubmitStatus({ success: true, message: data.message });
-        setFormData({ name: '', email: '', subject: '', message: '' });
-      } else {
-        setSubmitStatus({ success: false, message: data.message || 'Erreur lors de l\'envoi' });
-      }
+      
+      // Soumission traditionnelle du formulaire
+      form.submit();
+      
+      // Réinitialiser le formulaire après soumission
+      setFormData({ name: '', email: '', subject: '', message: '' });
+      setSubmitStatus({ success: true, message: 'Message envoyé avec succès!' });
+      
     } catch (error) {
       console.error('Erreur:', error);
       setSubmitStatus({ 
         success: false, 
-        message: error instanceof Error ? error.message : 'Une erreur est survenue' 
+        message: 'Une erreur est survenue lors de l\'envoi' 
       });
     } finally {
       setIsSubmitting(false);
@@ -154,9 +164,10 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="py-20 relative">
+      {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-950/20 to-transparent"></div>
 
-      <div className="w-full px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
@@ -174,7 +185,7 @@ export default function ContactSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Contact Methods */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -238,20 +249,10 @@ export default function ContactSection() {
                 ))}
               </div>
             </div>
-            {/* <div className="mt-6 p-4 bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-400/20 rounded-lg">
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-purple-300 font-medium">Site web</span> 
-                <span className="text-purple-200 text-sm">5.6k+ Visiteurs</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-cyan-300 font-medium"><a href="https://pixcodi.net/" target="_blank">pixcodi.net</a></span>
-                <span className="text-cyan-200 text-sm">Wallpapers gratuits</span>
-              </div>
-            </div> */}
           </motion.div>
 
           {/* Contact Form */}
-          {/* <motion.div
+          <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -260,7 +261,18 @@ export default function ContactSection() {
             <div className="bg-gradient-to-br from-slate-900/80 to-blue-950/50 backdrop-blur-xl p-8 rounded-2xl border border-blue-500/20 shadow-2xl shadow-blue-500/10">
               <h3 className="text-2xl font-bold text-white mb-6">Envoyez-moi un message</h3>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form 
+                onSubmit={handleSubmit} 
+                action={`https://formsubmit.co/elotmani.dev@gmail.com`}
+                method="POST"
+                className="space-y-6"
+              >
+                {/* Champs cachés pour FormSubmit */}
+                <input type="hidden" name="_subject" value="Nouveau message de portfolio" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_next" value={`${typeof window !== 'undefined' ? window.location.origin : ''}/#contact?contact=success`} />
+                <input type="hidden" name="_captcha" value="false" />
+                
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-blue-200 mb-2">
@@ -351,8 +363,14 @@ export default function ContactSection() {
                   </div>
                 )}
               </form>
+
+              <div className="mt-6 p-4 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-400/20 rounded-lg">
+                <p className="text-blue-200 text-sm">
+                  <span className="font-medium text-cyan-300">💡 Astuce:</span> Plus vous serez spécifique sur votre projet, mieux je pourrai vous aider. N'hésitez pas à mentionner votre budget et votre calendrier.
+                </p>
+              </div>
             </div>
-          </motion.div> */}
+          </motion.div>
         </div>
       </div>
     </section>
