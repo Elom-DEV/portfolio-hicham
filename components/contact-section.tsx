@@ -111,7 +111,15 @@ export default function ContactSection() {
       value: "+212 7 67 76 80 07",
       href: "tel:+212767768007",
       color: "from-cyan-400 to-blue-500",
-      description: "Lun-Sam 9h-18h",
+      description: "Lun-Vend 9h-18h",
+    },
+    {
+      icon: Phone,
+      title: "WhatsApp",
+      value: "+212 7 67 76 80 07",
+      href: "https://wa.me/212767768007",
+      color: "from-green-400 to-green-500",
+      description: "Lun-Vend 9h-21h",
     },
     {
       icon: MapPin,
