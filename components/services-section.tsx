@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import { Globe, Zap, Check, Star, ArrowRight, Monitor, FileText, User, Crown, Rocket, Shield } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 const services = [
   {
@@ -95,29 +96,26 @@ const packages = [
       "Analytics détaillés",
       "Support 90 jours",
       "Hébergement 1 an",
-      
     ],
     popular: true,
   },
   {
-  id: 3,
-  name: "Next.js Pro",
-  price: "",
-  description: "Développement de sites statiques et web apps performants avec Next.js",
-  icon: Rocket,
-  color: "from-blue-500 to-indigo-500",
-  features: [
-    "Site statique ultra-rapide avec Next.js",
-    "Design moderne et personnalisé",
-    "Hébergement inclus 1 an",
-    "Maintenance 6 mois",
-    "Support réactif",
-    "Optimisation SEO",
-  
-  ],
-  popular: false,
-}
-
+    id: 3,
+    name: "Next.js Pro",
+    price: "",
+    description: "Développement de sites statiques et web apps performants avec Next.js",
+    icon: Rocket,
+    color: "from-blue-500 to-indigo-500",
+    features: [
+      "Site statique ultra-rapide avec Next.js",
+      "Design moderne et personnalisé",
+      "Hébergement inclus 1 an",
+      "Maintenance 6 mois",
+      "Support réactif",
+      "Optimisation SEO",
+    ],
+    popular: false,
+  }
 ]
 
 const technologies = [
@@ -127,7 +125,6 @@ const technologies = [
   { name: "Yoast SEO", icon: "📈", description: "Optimisation référencement" },
   { name: "Security", icon: "🔒", description: "Protection avancée" },
   { name: "Speed", icon: "⚡", description: "Performance optimale" },
-
 ]
 
 export default function ServicesSection() {
@@ -182,7 +179,8 @@ export default function ServicesSection() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-300 mx-auto mb-8"></div>
           <p className="text-blue-200 text-lg max-w-3xl mx-auto">
-Création de sites WordPress professionnels, modernes et optimisés pour votre succès en ligne, ainsi que de sites statiques performants avec Next.js.          </p>
+            Création de sites WordPress professionnels, modernes et optimisés pour votre succès en ligne, ainsi que de sites statiques performants avec Next.js.
+          </p>
         </motion.div>
 
         {/* Tab Navigation */}
@@ -290,14 +288,13 @@ Création de sites WordPress professionnels, modernes et optimisés pour votre s
                         </div>
                       </div>
 
-                      {/* CTA */}
-                      <Button
-                        className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold py-3 transition-all duration-300"
-                        onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                      >
-                        Demander un devis
-                        <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                      </Button>
+                      {/* CTA - MODIFICATION ICI */}
+                      <Link href="/Service">
+                        <Button className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold py-3 transition-all duration-300">
+                          Savoir plus
+                          <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                      </Link>
                     </div>
 
                     {/* Hover effect */}
@@ -358,8 +355,7 @@ Création de sites WordPress professionnels, modernes et optimisés pour votre s
               transition={{ duration: 0.5 }}
             >
               {/* Packages Grid */}
-
-              <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-5 mb-16 px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                 {packages.map((pkg, index) => (
                   <motion.div
                     key={pkg.id}
@@ -408,18 +404,17 @@ Création de sites WordPress professionnels, modernes et optimisés pour votre s
                         ))}
                       </ul>
 
-                      {/* CTA */}
-                      <Button
-                        className={`w-full font-semibold py-3 transition-all duration-300 ${
+                      {/* CTA - MODIFICATION ICI */}
+                      <Link href="/Service">
+                        <Button className={`w-full font-semibold py-3 transition-all duration-300 ${
                           pkg.popular
                             ? "bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-500 hover:to-blue-600 text-white shadow-lg shadow-cyan-400/25"
                             : "bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white"
-                        }`}
-                        onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                      >
-                        {pkg.popular ? "Choisir ce package" : "Commencer"}
-                        <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                      </Button>
+                        }`}>
+                          {pkg.popular ? "Choisir ce package" : "Commencer"}
+                          <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                      </Link>
                     </div>
 
                     {/* Glow effect for popular */}
