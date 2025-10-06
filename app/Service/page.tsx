@@ -33,7 +33,7 @@ const portfolioTemplates = [
       {
         id: "pack1",
         name: "Pack Premium",
-        price: "799 DH",
+        price: "",
         features: [
           "Hébergement 1 an gratuit",
           "Adresse email professionnelle",
@@ -48,7 +48,7 @@ const portfolioTemplates = [
       {
         id: "pack2",
         name: "Pack Essentiel",
-        price: "699 DH",
+        price: " ",
         features: [
           "Hébergement 1 an gratuit",
           "Nom de domaine gratuit",
@@ -72,7 +72,7 @@ const portfolioTemplates = [
       {
         id: "pack1",
         name: "Pack Premium",
-        price: "899 DH",
+        price: "",
         features: [
           "Hébergement 1 an gratuit",
           "Adresse email professionnelle",
@@ -87,7 +87,7 @@ const portfolioTemplates = [
       {
         id: "pack2",
         name: "Pack Essentiel",
-        price: "799 DH",
+        price: "",
         features: [
           "Hébergement 1 an gratuit",
           "Nom de domaine gratuit",
