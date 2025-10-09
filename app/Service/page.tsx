@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useInView } from "react-intersection-observer"
+import { useEffect } from "react"
 import {
   Check,
   Star,
@@ -222,6 +223,14 @@ const technologies = [
 ]
 
 export default function PortfolioServicesPage() {
+  const [showPopup, setShowPopup] = useState(false)
+
+// afficher le popup après 8 secondes
+useEffect(() => {
+  const timer = setTimeout(() => setShowPopup(true), 3000)
+  return () => clearTimeout(timer)
+}, [])
+
   const [selectedTemplate, setSelectedTemplate] = useState<number | null>(null)
   const [selectedService, setSelectedService] = useState<number | null>(null)
   const [ref, inView] = useInView({
@@ -712,6 +721,55 @@ export default function PortfolioServicesPage() {
           <MessageCircle className="h-6 w-6 sm:h-7 sm:w-7" />
         </Button>
       </motion.div>
+      {/* Popup Offre spéciale */}
+<AnimatePresence>
+  {showPopup && (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm"
+      onClick={() => setShowPopup(false)}
+    >
+      <motion.div
+        onClick={(e) => e.stopPropagation()}
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.8, opacity: 0 }}
+        transition={{ duration: 0.4 }}
+        className="relative bg-gradient-to-br from-slate-900/90 to-blue-950/70 border border-cyan-400/30 rounded-2xl p-6 sm:p-8 text-center max-w-md mx-4 shadow-lg shadow-cyan-400/20"
+      >
+        <button
+          onClick={() => setShowPopup(false)}
+          className="absolute top-3 right-3 text-cyan-300 hover:text-white transition"
+        >
+          ✕
+        </button>
+
+        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+          🔥 Offre spéciale !
+        </h2>
+        <p className="text-blue-200 mb-6">
+          -20% sur ton site web si tu demandes un devis <span className="text-cyan-300 font-semibold">aujourd’hui</span>.
+        </p>
+
+        <Button
+          onClick={() =>
+            window.open(
+              "https://wa.me/212767768007?text=Bonjour! Je veux profiter de l'offre -20% pour la création de mon site web.",
+              "_blank"
+            )
+          }
+          className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-cyan-500 hover:to-blue-600 text-white font-semibold py-3 rounded-xl shadow-md shadow-cyan-400/30 transition-all"
+        >
+          Demander mon devis maintenant 🚀
+        </Button>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
     </div>
+    
   )
 }
