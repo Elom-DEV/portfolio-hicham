@@ -8,22 +8,22 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
 const projects = [
-  {
-    id: 1,
-    title: "PIXCODI",
-    category: "Wordpress",
-    description: " Plateforme dédiée aux Wallpapers gratuits pour mobile et PC",
-    // longDescription:
-    //   "Une solution complète d'analyse de données utilisant l'intelligence artificielle pour fournir des insights en temps réel. Interface moderne avec visualisations interactives et tableaux de bord personnalisables.",
-    image: "/pixcodi.png?height=400&width=600",
-    technologies: ["Wordpress", "Html/css", "Seo", "Elementor", "Hostinger", " Analytics"],
-    demo: "https://pixcodi.net/",
-    featured: true,
-    stats: { stars: 234, forks: 45, views: "12.5k" },
-    icon: Globe,
-    Github: false ,
+  // {
+  //   id: 1,
+  //   title: "PIXCODI",
+  //   category: "Wordpress",
+  //   description: " Plateforme dédiée aux Wallpapers gratuits pour mobile et PC",
+  //   // longDescription:
+  //   //   "Une solution complète d'analyse de données utilisant l'intelligence artificielle pour fournir des insights en temps réel. Interface moderne avec visualisations interactives et tableaux de bord personnalisables.",
+  //   image: "/pixcodi.png?height=400&width=600",
+  //   technologies: ["Wordpress", "Html/css", "Seo", "Elementor", "Hostinger", " Analytics"],
+  //   demo: "https://pixcodi.net/",
+  //   featured: true,
+  //   stats: { stars: 234, forks: 45, views: "12.5k" },
+  //   icon: Globe,
+  //   Github: false ,
    
-  },
+  // },
   {
     id: 2,
     title: "A Movie Application",
@@ -41,12 +41,12 @@ const projects = [
   {
     id: 3,
     title: "Cabinet médical",
-    category: "Web App",
+    category: "Java",
     description: "Une application Java pour gérer les consultations dans un cabinet médical.",
     // longDescription:
     //   "Solution web complète pour le suivi et la réduction de l'empreinte carbone des entreprises avec rapports automatisés et recommandations personnalisées.",
     image: "/cabinet.gif?height=400&width=600",
-    technologies: [ "Java", "Micro services","PostgreSQL", "Spring boot", "Docker","Bff"],
+    technologies: [ "Java", "Spring boot", "Micro services","PostgreSQL", "Docker","Bff"],
     github: "#",
     demo: "https://sienna-giraffe-566482.hostingersite.com/",
     featured: true,
@@ -68,9 +68,22 @@ const projects = [
     stats: { stars: 312, forks: 67, views: "15.3k" },
     icon: Code,
   },
+  {
+    id: 5,
+    title: "Mon portfolio",
+    category: "Next js",
+    description: "Monm Portfolio personnel avec une page des services .",
+    image: "/monPortfolio.png?height=400&width=600",
+    technologies: ["TypeScript", "tailwind css", "Next.js", "motion"],
+    github: "#",
+    demo: "https://elotmani-hicham.com/",
+    featured: true,
+    stats: { stars: 100, forks: 20, views: "5k" },
+    icon: Globe,
+  }
 ]
 
-const categories = ["Tous", "Wordpress", "React js","Next js", "Web App", ]
+const categories = ["Tous", "React js","Next js", "Java", ]
 
 export default function ProjectsSection() {
   const [selectedCategory, setSelectedCategory] = useState("Tous")

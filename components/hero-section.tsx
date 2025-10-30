@@ -110,8 +110,8 @@ export default function HeroSection() {
               transition={{ delay: 0.5 }}
               className="text-blue-200 text-lg mb-8 max-w-2xl leading-relaxed"
             >
-              Étudiant en Master 1, passionné par le développement logiciel et spécialisé en React.js, Next.js, Java Spring Boot et WordPress. Créateur de contenu sur les réseaux sociaux avec plus de 17k abonnés cumulés. Fondateur de pixcodi.net, une plateforme de wallpapers gratuits.
-
+              Étudiant en Master 2, passionné par le développement logiciel et spécialisé en React.js, Next.js, Java Spring Boot et WordPress.
+               Créateur de contenu sur les réseaux sociaux avec plus de 30k abonnés cumulés.
 
             </motion.p>
 

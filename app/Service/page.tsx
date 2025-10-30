@@ -225,7 +225,7 @@ const technologies = [
 export default function PortfolioServicesPage() {
   const [showPopup, setShowPopup] = useState(false)
 
-// afficher le popup après 8 secondes
+//  Popup
 useEffect(() => {
   const timer = setTimeout(() => setShowPopup(true), 3000)
   return () => clearTimeout(timer)

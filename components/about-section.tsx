@@ -91,9 +91,8 @@ export default function AboutSection() {
                 </p>
 
                 <p>
-                  En parallèle de mon activité en développement logiciel, je partage du contenu éducatif sur la programmation via TikTok, où j’ai réuni une communauté de plus de 10 000 abonnés. J’ai également lancé la plateforme pixcodi.net, spécialisée dans les wallpapers gratuits pour mobile et PC. Ce projet bénéficie d’une forte visibilité sur Pinterest (plus de 1 400 abonnés et 2,5 millions de vues mensuelles) et sur Threads (plus de 5 abonnés et 4 millions de vues), où je diffuse régulièrement mes créations.
-
-
+               En parallèle de mon activité en développement logiciel, je partage du contenu éducatif sur la programmation via TikTok, 
+               où j’ai réuni une communauté de plus de 10 000 abonnés.
                 </p>
 
                 <p>
