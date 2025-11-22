@@ -22,6 +22,8 @@ const techLogos = [
   { src: "VsCode.png", alt: "Visual Studio" },
   { src: "postgress.png", alt: "PostgreSQL" },
   { src: "python.png", alt: "Python" },
+  { src: "appache.png", alt: "QA Testing" },
+  {src: "jira.png", alt: "jira"},
 ]
 
 export default function TechLogosMarquee() {

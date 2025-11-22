@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import { Code, Database, Cloud, Smartphone, Zap } from "lucide-react"
+import { Code, Database, Cloud, Smartphone, Zap, ListOrdered } from "lucide-react"
 
 const skillCategories = [
   {
@@ -50,22 +50,25 @@ const skillCategories = [
     icon: Smartphone,
     color: "from-indigo-500 to-purple-500",
     skills: [
-      { name: "TikTok (10k+)", level: 95, color: "bg-pink-500" },
-      { name: "Pinterest (1.4k+)", level: 90, color: "bg-red-500" },
-      { name: "Threads (5.6k+)", level: 90, color: "bg-purple-500" },
-      { name: "Contenu Tech", level: 90, color: "bg-indigo-500" },
+      { name: "TikTok (11k+)", level: 95, color: "bg-pink-500" },
+      { name: "Pinterest (2k+)", level: 90, color: "bg-red-500" },
+      { name: "Threads (6k+)", level: 90, color: "bg-purple-500" },
       { name: "Fcebook (7.2k+)", level: 85, color: "bg-blue-500" },
     ],
   },
+  
   {
-    title: "Securité",
+  
+    title: "Testing & QA",
     icon: Zap,
-    color: "from-purple-500 to-pink-500",
+    color: "from-pink-500 to-red-500",
     skills: [
-      { name: "Keycloak", level: 50, color: "bg-purple-600" },
-      { name: "Spring Security", level: 50, color: "bg-pink-500" },
+       { name: "Postman", level: 70, color: "bg-orange-400" },
+      { name: "JUnit", level: 40, color: "bg-pink-400" },
+      { name: "Jmeter", level: 40, color: "bg-blue-400" },
+      { name: "Jira & Xray", level: 50, color: "bg-green-400" },
     ],
-  },
+  }
 ]
 
 const tools = [
@@ -73,7 +76,6 @@ const tools = [
   "VS Code",
   "IntelliJ IDEA",
   "Hostinger",
-  "Postman",
   "Docker",
   "Canva",
   "Lightroom",

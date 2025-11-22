@@ -8,11 +8,10 @@ import Image from "next/image"
 
 const roles = [
   "JAVA",
-  "REACT.JS",
+  "Testeur QA",
   "NEXT.JS", 
   "SPRING BOOT",
-  "DÉVELOPPEUR WORDPRESS",
-  "SEO OPTIMISATION",
+  " WORDPRESS",
   "Créateur de Contenu",
 
 ]
@@ -110,8 +109,7 @@ export default function HeroSection() {
               transition={{ delay: 0.5 }}
               className="text-blue-200 text-lg mb-8 max-w-2xl leading-relaxed"
             >
-              Étudiant en Master 2, passionné par le développement logiciel et spécialisé en React.js, Next.js, Java Spring Boot et WordPress.
-               Créateur de contenu sur les réseaux sociaux avec plus de 30k abonnés cumulés.
+              Étudiant en Master 2, passionné par le développement logiciel et spécialisé en Next.js, Java Spring Boot, WordPress et les tests logiciels (QA & automatisation). Créateur de contenu sur les réseaux sociaux avec plus de 30k abonnés cumulés..
 
             </motion.p>
 

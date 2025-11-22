@@ -85,19 +85,15 @@ export default function AboutSection() {
 
               <div className="space-y-4 text-blue-100 leading-relaxed">
                 <p>
-                  Je suis HICHAM ELOTMANI, développeur full-stack passionné par la création d'applications web modernes.
-                  Mon expertise couvre React.js et Next.js, Java Spring Boot et WordPress, avec une approche axée sur les
-                  microservices et l'architecture BFF.
+                 Je suis HICHAM ELOTMANI, passionné par l’ingénierie logicielle et la création de solutions web modernes. J’utilise principalement Next.js, Java Spring Boot et WordPress, et j’intègre également le testing logiciel pour garantir la qualité des applications. Je travaille également avec des architectures microservices et des modèles BFF, que j’intègre dans mes projets pour offrir des solutions performantes et bien structurées.
                 </p>
 
                 <p>
-               En parallèle de mon activité en développement logiciel, je partage du contenu éducatif sur la programmation via TikTok, 
-               où j’ai réuni une communauté de plus de 10 000 abonnés.
+              En parallèle, je partage du contenu éducatif sur la programmation sur TikTok, où j’ai réuni une communauté de plus de 10 000 abonnés.
                 </p>
 
                 <p>
-                  Actuellement en formation d'Ingénierie Informatique Big Data et Cloud Computing à l'ENSET Mohammedia,
-                  je reste constamment à jour avec les dernières technologies et meilleures pratiques du développement.
+                 Actuellement en formation d’Ingénierie Informatique, Big Data et Cloud Computing à l’ENSET Mohammedia, je continue de développer mes compétences techniques et de m’adapter aux évolutions du secteur.
                 </p>
               </div>
 
