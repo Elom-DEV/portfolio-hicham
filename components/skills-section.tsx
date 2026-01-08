@@ -67,6 +67,7 @@ const skillCategories = [
       { name: "JUnit", level: 40, color: "bg-pink-400" },
       { name: "Jmeter", level: 40, color: "bg-blue-400" },
       { name: "Jira & Xray", level: 50, color: "bg-green-400" },
+      { name: "Selenium", level: 40, color: "bg-purple-400" },
     ],
   }
 ]
