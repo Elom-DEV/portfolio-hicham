@@ -6,7 +6,7 @@ import { Calendar, MapPin, Building, TrendingUp } from "lucide-react"
 
 const experiences = [
   {
-    title: "Développeur Full Stack",
+    title: "Développeur Java Spring Boot | Tests & Qualité Logicielle",
     company: "DOMCIT",
     location: "À distance",
     period: "Févr. 2025 - Présent",
@@ -18,8 +18,16 @@ const experiences = [
       "Utilisation de PostgreSQL avec Spring Data JPA pour la persistance",
       "Intégration frontend React.js avec microservices via Axios",
       "Gestion de version avec GitLab et bonnes pratiques de commit",
+      "➡️ Partie QA :",
+      "Conception et exécution de tests fonctionnels (cas de test).",
+      "Tests boîte noire : validation du comportement utilisateur et API.",
+      "TNR – Tests de Non-Régression après chaque évolution.",
+      " Validation des API avec Postman (collections, scripts de tests automatiques).",
+      " Vérification des statuts HTTP, payloads, scénarios d’erreurs et sécurité basique.",
+      "Suivi des anomalies et retests après correction."
+
     ],
-    technologies: ["Java", "Spring Boot", "React.js", "PostgreSQL", "GitLab", "Microservices"],
+    technologies: ["Java", "Spring Boot", "Postman", "PostgreSQL", "GitLab", "Microservices"],
     achievements: "Architecture microservices complète",
   },
   {

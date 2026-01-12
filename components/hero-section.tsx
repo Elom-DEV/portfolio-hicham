@@ -7,11 +7,11 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
 const roles = [
-  "JAVA",
-  "Testeur QA",
-  "NEXT.JS", 
+  
+  "Testing ",
+  "QA & Automatisation",
+  "JAVA", 
   "SPRING BOOT",
-  " WORDPRESS",
   "Créateur de Contenu",
 
 ]
@@ -69,7 +69,7 @@ export default function HeroSection() {
             >
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-400/30 backdrop-blur-sm mb-4">
                 <Sparkles className="h-4 w-4 text-cyan-300 mr-2" />
-                <span className="text-cyan-300 text-sm font-medium">Développeur Passionné</span>
+                <span className="text-cyan-300 text-sm font-medium">Développeur & QA Passionné</span>
               </div>
             </motion.div>
 
@@ -109,7 +109,7 @@ export default function HeroSection() {
               transition={{ delay: 0.5 }}
               className="text-blue-200 text-lg mb-8 max-w-2xl leading-relaxed"
             >
-              Étudiant en Master 2, passionné par le développement logiciel et spécialisé en Next.js, Java Spring Boot, WordPress et les tests logiciels (QA & automatisation). Créateur de contenu sur les réseaux sociaux avec plus de 30k abonnés cumulés..
+              Étudiant en Master 2, passionné par le développement logiciel et spécialisé en Java Spring Boot et QA / tests automatisés. Je m’intéresse à l’assurance qualité des applications, à l’optimisation des tests et à la création de solutions fiables et performantes.
 
             </motion.p>
 

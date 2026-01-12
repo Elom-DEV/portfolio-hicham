@@ -79,22 +79,23 @@ export default function AboutSection() {
           >
             <div className="bg-gradient-to-br from-slate-900/50 to-blue-950/30 backdrop-blur-xl rounded-2xl p-8 border border-blue-500/20 shadow-2xl shadow-blue-500/10">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6">
-                Développeur Passionné{" "}
+                Développeur & QA Passionné{" "}
                 <span className="bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent"></span>
               </h3>
 
               <div className="space-y-4 text-blue-100 leading-relaxed">
                 <p>
-                 Je suis HICHAM ELOTMANI, passionné par l’ingénierie logicielle et la création de solutions web modernes. J’utilise principalement Next.js, Java Spring Boot et WordPress, et j’intègre également le testing logiciel pour garantir la qualité des applications. Je travaille également avec des architectures microservices et des modèles BFF, que j’intègre dans mes projets pour offrir des solutions performantes et bien structurées.
-                </p>
+                  Je suis <b>HICHAM ELOTMANI</b>, passionné par l’ingénierie logicielle et la qualité des applications. J’intègre systématiquement le <b>QA</b> et le testing logiciel pour garantir des solutions robustes et performantes.                </p>
 
                 <p>
-              En parallèle, je partage du contenu éducatif sur la programmation sur TikTok, où j’ai réuni une communauté de plus de 10 000 abonnés.
-                </p>
+              J’ai de l’expérience avec Java Spring Boot, ainsi que des architectures microservices et des modèles BFF, que j’intègre dans mes projets pour offrir des applications bien structurées et maintenables.                </p>
 
                 <p>
-                 Actuellement en formation d’Ingénierie Informatique, Big Data et Cloud Computing à l’ENSET Mohammedia, je continue de développer mes compétences techniques et de m’adapter aux évolutions du secteur.
-                </p>
+                   En parallèle, je partage du contenu éducatif sur la programmation sur TikTok, où j’ai réuni une communauté de plus de 10 000 abonnés.
+                  </p>
+                  <p>
+                    Actuellement en formation de Master en Ingénierie Informatique, Big Data et Cloud Computing à l’ENSET Mohammedia, je continue de développer mes compétences en QA et Test Automation, avec pour objectif de contribuer à des projets de haute qualité.
+                  </p>
               </div>
 
               <div className="mt-8 grid grid-cols-2 gap-6">
