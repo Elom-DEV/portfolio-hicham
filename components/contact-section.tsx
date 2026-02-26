@@ -157,7 +157,7 @@ export default function ContactSection() {
     {
       icon: Instagram,
       name: "Instagram",
-      href: "https://www.instagram.com/elom.hicham/",
+      href: "https://www.instagram.com/hmeottt/",
       color: "hover:text-pink-400",
       followers: "elom.hicham",
     },
