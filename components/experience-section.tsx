@@ -9,7 +9,7 @@ const experiences = [
     title: "Développeur Java Spring Boot | Tests & Qualité Logicielle",
     company: "DOMCIT",
     location: "À distance",
-    period: "Févr. 2025 - Présent",
+    period: "Févr. 2025 - Mars. 2026",
     description: [
       "Développement d'API RESTful en Java avec Spring Boot selon l'architecture microservices",
       "Mise en place de l'architecture BFF (Backend For Frontend)",

@@ -124,7 +124,7 @@ export default function ContactSection() {
     {
       icon: MapPin,
       title: "Localisation",
-      value: "Casablanca, Maroc",
+      value: " Maroc",
       href: "#",
       color: "from-blue-500 to-indigo-500",
       description: "Disponible en remote",
