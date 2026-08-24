@@ -11,7 +11,7 @@ const education = [
     location: " ENSET Mohammedia, Maroc.",
     period: "2024 - 2026",
     // description: "Spécialisation en développement web et architectures distribuées",
-    grade: "En cours",
+    grade: "Bien",
   },
   {
     degree: "Licence Informatique",

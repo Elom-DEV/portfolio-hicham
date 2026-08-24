@@ -69,7 +69,7 @@ export default function HeroSection() {
             >
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-400/30 backdrop-blur-sm mb-4">
                 <Sparkles className="h-4 w-4 text-cyan-300 mr-2" />
-                <span className="text-cyan-300 text-sm font-medium">Développeur & QA Passionné</span>
+                <span className="text-cyan-300 text-sm font-medium">Dev Background & QA Mindset</span>
               </div>
             </motion.div>
 
@@ -189,7 +189,7 @@ export default function HeroSection() {
               {/* Profile image */}
               <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-gradient-to-r from-blue-400 to-cyan-400 shadow-2xl shadow-blue-500/25">
                 <Image
-                  src="/ELOM.png"
+                  src="/ELOM.jpeg"
                   alt="HICHAM ELOTMANI - Développeur Full-Stack"
                   fill
                   className="object-cover"
