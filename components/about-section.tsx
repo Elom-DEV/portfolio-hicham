@@ -7,14 +7,14 @@ import { Code2, Lightbulb, Users, Zap, Target, Heart } from "lucide-react"
 const highlights = [
   {
     icon: Code2,
-    title: "Code Élégant",
-    description: "Architecture propre et maintenable",
+    title: "Tests Rigoureux",
+    description: "Validation fiable et méthodique",
     color: "from-blue-400 to-cyan-400",
   },
   {
     icon: Lightbulb,
-    title: "Innovation",
-    description: "Solutions créatives et modernes",
+    title: "Détection des Bugs",
+    description: "Identification des anomalies et problèmes",
     color: "from-cyan-400 to-blue-500",
   },
   {
@@ -25,20 +25,20 @@ const highlights = [
   },
   {
     icon: Zap,
-    title: "Performance",
-    description: "Optimisation et rapidité",
+    title: "Automatisation",
+    description: "Tests automatisés et efficaces",
     color: "from-indigo-500 to-purple-500",
   },
   {
     icon: Target,
     title: "Précision",
-    description: "Attention aux détails",
+    description: "Attention aux moindres détails",
     color: "from-purple-500 to-pink-500",
   },
   {
     icon: Heart,
-    title: "Passion",
-    description: "Amour du développement",
+    title: "PasAmélioration Continue",
+    description: "Qualité et fiabilité en permanence",
     color: "from-pink-500 to-red-500",
   },
 ]
