@@ -24,6 +24,19 @@ const education = [
 ]
 
 const certifications = [
+     {
+    name: " Selenium WebDriver with Java -Basics to Advanced+Frameworks",
+    issuer: "Udemy",
+    date: "En cours",
+    icon: Award,
+  },
+  
+    {
+    name: "Testeur logiciel XRAY - JIRA : Outil de management des tests",
+    issuer: "Udemy",
+    date: "2026",
+    icon: Award,
+  },
   {
     name: "WORDPRESS Le Cours Complet |version 2024 (45h)",
     issuer: "Udemy",

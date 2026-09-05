@@ -85,17 +85,12 @@ export default function AboutSection() {
 
               <div className="space-y-4 text-blue-100 leading-relaxed">
                 <p>
-                  Je suis <b>HICHAM ELOTMANI</b>, passionné par l’ingénierie logicielle et la qualité des applications. J’intègre systématiquement le <b>QA</b> et le testing logiciel pour garantir des solutions robustes et performantes.                </p>
-
-                <p>
-              J’ai de l’expérience avec Java Spring Boot, ainsi que des architectures microservices et des modèles BFF, que j’intègre dans mes projets pour offrir des applications bien structurées et maintenables.                </p>
-
-                <p>
-                   En parallèle, je partage du contenu éducatif sur la programmation sur TikTok, où j’ai réuni une communauté de plus de 10 000 abonnés.
-                  </p>
-                  <p>
-                    Actuellement en formation de Master en Ingénierie Informatique, Big Data et Cloud Computing à l’ENSET Mohammedia, je continue de développer mes compétences en QA et Test Automation, avec pour objectif de contribuer à des projets de haute qualité.
-                  </p>
+                  Titulaire d'un <b>Master en Big Data & Cloud Computing</b> , avec une solide expérience en développement logiciel (Java, Spring Boot, React, Next.js).
+                   Je mets aujourd'hui cette double compétence technique au service de <b>l'assurance qualité</b>,
+                    des <b>tests fonctionnels</b> et des <b>tests automatisés</b>, avec une approche orientée développeur :
+                     comprendre le code pour mieux le tester, et concevoir des solutions de test fiables, maintenables et performantes.
+                </p>
+              
               </div>
 
               <div className="mt-8 grid grid-cols-2 gap-6">
@@ -107,9 +102,9 @@ export default function AboutSection() {
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">
-                    1+
+                    3+
                   </div>
-                  <div className="text-blue-200 text-sm">Années d'expérience</div>
+                  <div className="text-blue-200 text-sm">Années d'expérience dans différents domaines</div>
                 </div>
               </div>
             </div>

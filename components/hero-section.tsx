@@ -81,7 +81,7 @@ export default function HeroSection() {
             >
               <span className="block text-white mb-2">Hicham Elotmani </span>
               <span  className="block bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 bg-clip-text text-transparent">
-                INGÉNIERIE  LOGICIEL
+                QA & TESTS LOGICIELS
               </span>
             </motion.h1>
 
@@ -109,7 +109,7 @@ export default function HeroSection() {
               transition={{ delay: 0.5 }}
               className="text-blue-200 text-lg mb-8 max-w-2xl leading-relaxed"
             >
-              Étudiant en Master 2, passionné par le développement logiciel et spécialisé en Java Spring Boot et QA / tests automatisés. Je m’intéresse à l’assurance qualité des applications, à l’optimisation des tests et à la création de solutions fiables et performantes.
+              {/* Étudiant en Master 2, passionné par le développement logiciel et spécialisé en Java Spring Boot et QA / tests automatisés. Je m’intéresse à l’assurance qualité des applications, à l’optimisation des tests et à la création de solutions fiables et performantes. */}
 
             </motion.p>
 
@@ -200,7 +200,7 @@ export default function HeroSection() {
               {/* Floating elements */}
               {[
                 {  src: "/javaa.png", position: "top-4 right-4 ", delay: 0 },
-                { src: "/VsCode.png", position: "bottom-4 left-4", delay: 1 },
+                { src: "/Selenium.png", position: "bottom-4 left-4", delay: 1 },
                 { src: "/postman.png", position: "top-4 left-4", delay: 2 },
                 { src: "/intelij.png", position: "bottom-4 right-4", delay: 3 },
 
