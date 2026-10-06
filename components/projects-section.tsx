@@ -8,28 +8,27 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
 const projects = [
-  // {
-  //   id: 1,
-  //   title: "PIXCODI",
-  //   category: "Wordpress",
-  //   description: " Plateforme dédiée aux Wallpapers gratuits pour mobile et PC",
-  //   // longDescription:
-  //   //   "Une solution complète d'analyse de données utilisant l'intelligence artificielle pour fournir des insights en temps réel. Interface moderne avec visualisations interactives et tableaux de bord personnalisables.",
-  //   image: "/pixcodi.png?height=400&width=600",
-  //   technologies: ["Wordpress", "Html/css", "Seo", "Elementor", "Hostinger", " Analytics"],
-  //   demo: "https://pixcodi.net/",
-  //   featured: true,
-  //   stats: { stars: 234, forks: 45, views: "12.5k" },
-  //   icon: Globe,
-  //   Github: false ,
-   
-  // },
+  {
+    id: 1,
+    title: "Home Of Wallpapers",
+    category: "Android App",
+    description: "Application mobile Android « Home Of Wallpapers », déployée en production et disponible sur le Google Play Store.",
+   // longDescription:"Construit avec React.js pour l'interface utilisateur, OpenWeatherMap pour les données météo et stylisé avec TailwindCSS.",
+    image: "/how.png?height=400&width=600",
+    technologies: ["Android native", "Android Studio", "Firebase", "Admob", ""],
+    github: "https://github.com/Elom-DEV/Weather-App-React-js-?tab=readme-ov-file",
+    demo: "https://play.google.com/store/apps/details?id=com.elom",
+    featured: true,
+    stats: { stars: 189, forks: 32, views: "8.7k" },
+    icon: Code, 
+  },
+
   {
     id: 2,
     title: "A Movie Application",
     category: "React js",
     description: "Parcourir les films avec l'API Appwrit | Trending Movies Search movies ",
-    longDescription:"Construit avec React.js pour l'interface utilisateur, Appwrite pour l'algorithme Trending Movies et stylisé avec TailwindCSS.",
+    //longDescription:"Construit avec React.js pour l'interface utilisateur, Appwrite pour l'algorithme Trending Movies et stylisé avec TailwindCSS.",
     image: "/moviApp.png?height=400&width=600",
     technologies: ["React js", "TypeScript", "Node.js", "Appwrit", "tailwind css"],
     github: "https://github.com/Elom-DEV/The-Movie-App-React-js-?tab=readme-ov-file",
@@ -49,7 +48,7 @@ const projects = [
     technologies: [ "Java", "Spring boot", "Micro services","PostgreSQL", "Docker","Bff"],
     github: "#",
     demo: "https://sienna-giraffe-566482.hostingersite.com/",
-    featured: true,
+    featured: false,
     stats: { stars: 156, forks: 28, views: "6.2k" },
     icon: Globe,
   },
@@ -83,7 +82,7 @@ const projects = [
   }
 ]
 
-const categories = ["Tous", "React js","Next js", "Java", ]
+const categories = ["Tous", "Android App","React js","Next js", "Java",]
 
 export default function ProjectsSection() {
   const [selectedCategory, setSelectedCategory] = useState("Tous")

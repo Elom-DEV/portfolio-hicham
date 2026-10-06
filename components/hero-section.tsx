@@ -79,9 +79,9 @@ export default function HeroSection() {
               transition={{ delay: 0.3 }}
               className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6"
             >
-              <span className="block text-white mb-2">Hicham Elotmani </span>
+              <span className="block text-white mb-2">ELOTMANI HICHAM </span>
               <span  className="block bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 bg-clip-text text-transparent">
-                QA & TESTS LOGICIELS
+                Ingénieur Logiciel, Évolution vers le QA
               </span>
             </motion.h1>
 
