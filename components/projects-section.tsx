@@ -79,10 +79,23 @@ const projects = [
     featured: true,
     stats: { stars: 100, forks: 20, views: "5k" },
     icon: Globe,
+  },
+  {
+    id: 6,
+    title: "BillFlow Enterprise",
+    category: "PFE",
+    description: "plateforme SaaS de facturation à la consommation en temps réel",
+    image: "/pfe.png?height=400&width=600",
+    technologies: ["Java & Spring Boot", "kafka", "gitlab","PostgreSQL", "Docker"],
+    github: "#",
+    //demo: "https://sienna-giraffe-566482.hostingersite.com/",
+    featured: false,
+    stats: { stars: 156, forks: 28, views: "6.2k" },
+    icon: Database,
   }
 ]
 
-const categories = ["Tous", "Android App","React js","Next js", "Java",]
+const categories = ["Tous","PFE","Android App","React js","Next js", "Java",]
 
 export default function ProjectsSection() {
   const [selectedCategory, setSelectedCategory] = useState("Tous")
