@@ -100,8 +100,8 @@ export default function ContactSection() {
     {
       icon: Mail,
       title: "Email",
-      value: "contact@elotmani-hicham.com",
-      href: "mailto:contact@elotmani-hicham.com",
+      value: "contact@elotmani.pro",
+      href: "mailto:contact@elotmani.pro",
       color: "from-blue-400 to-cyan-400",
       description: "Réponse sous 24h",
     },

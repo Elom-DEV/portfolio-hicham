@@ -38,8 +38,7 @@ export default function Footer() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-blue-200 mb-4 max-w-md leading-relaxed"
             >
-              Développeur Full-Stack passionné par la création d'expériences numériques exceptionnelles. Spécialisé dans
-              les technologies modernes et l'innovation.
+             Ingénieur logiciel avec une expérience en développement Java/Spring Boot, orienté vers l’assurance qualité logicielle QA. Compétences en tests fonctionnels, validation d’API REST et tests de non-régression, avec pour objectif de garantir la fiabilité et la qualité des applications.
             </motion.p>
 
             <motion.p

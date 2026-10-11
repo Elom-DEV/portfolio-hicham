@@ -199,10 +199,10 @@ export default function HeroSection() {
 
               {/* Floating elements */}
               {[
-                {  src: "/javaa.png", position: "top-4 right-4 ", delay: 0 },
-                { src: "/Selenium.png", position: "bottom-4 left-4", delay: 1 },
-                { src: "/postman.png", position: "top-4 left-4", delay: 2 },
-                { src: "/intelij.png", position: "bottom-4 right-4", delay: 3 },
+                {  src: "/javaa.webp", position: "top-4 right-4 ", delay: 0 },
+                { src: "/Selenium.webp", position: "bottom-4 left-4", delay: 1 },
+                { src: "/postman.webp", position: "top-4 left-4", delay: 2 },
+                { src: "/intelij.webp", position: "bottom-4 right-4", delay: 3 },
 
 
               ].map((item, index) => (
